@@ -37,13 +37,13 @@ class Tournament(metaclass=FieldHolder):
                'game_name', 'participants_swappable',
                'team_convertable', 'group_stages_were_started',
                'locked_at', 'event_id', 'public_predictions_before_start_time',
-               'ranked', 'grand_finals_modifier', 'predict_the_losers_bracket', 'game_name']
+               'ranked', 'grand_finals_modifier', 'predict_the_losers_bracket']
 
     _update_parameters = ['name', 'tournament_type', 'url', 'subdomain', 'description', 'open_signup', 'hold_third_place_match',
                           'pts_for_match_win', 'pts_for_match_tie', 'pts_for_game_win', 'pts_for_game_tie', 'pts_for_bye', 'swiss_rounds',
                           'ranked_by', 'rr_pts_for_match_win', 'rr_pts_for_match_tie', 'rr_pts_for_game_win', 'rr_pts_for_game_tie',
                           'accept_attachments', 'hide_forum', 'show_rounds', 'private', 'notify_users_when_matches_open', 'notify_users_when_the_tournament_ends',
-                          'sequential_pairings', 'signup_cap', 'start_at', 'check_in_duration', 'grand_finals_modifier']
+                          'sequential_pairings', 'signup_cap', 'start_at', 'check_in_duration', 'grand_finals_modifier', 'game_name']
 
     def __init__(self, connection, json_def, **kwargs):
         self.connection = connection
